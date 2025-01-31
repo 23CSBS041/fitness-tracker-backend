@@ -17,7 +17,7 @@ app.use(express.json());
 // MongoDB Connection with retry logic
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/fittrack', {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://premkumar:premkumar@cluster0.fb09ayn.mongodb.net/FitnessTracker', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
